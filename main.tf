@@ -21,7 +21,7 @@ resource "aws_iam_role" "this" {
         }
     ]
 })
-  managed_policy_arns = [aws_iam_policy.this.arn]
+  managed_policy_arns = [data.aws_iam_policy.this.arn]
 }
 
 data "aws_iam_policy" "this" {
