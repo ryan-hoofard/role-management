@@ -14,7 +14,7 @@ resource "aws_iam_role" "this" {
                 "StringEquals": {
                     "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
                     "token.actions.githubusercontent.com:sub": [
-                        "repo:ryan-hoofard/role-management:environment:dev"
+                        "repo:ryan-hoofard/terraform-aws-oidc:environment:dev"
                     ]
                 }
             }
