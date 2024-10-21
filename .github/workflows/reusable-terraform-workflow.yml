@@ -34,7 +34,7 @@ jobs:
         run: echo "BUCKET_KEY=$(basename -s -terraform ${{ github.event.repository.name }})" >> $GITHUB_ENV
 
       - name: set bucket name based on environment
-        run: echo "BUCKET_NAME=ryanh-github-oidc-terraform-test-${{ inputs.environment }}" >> $GITHUB_ENV
+        run: echo "BUCKET_NAME=ryanh-github-oidc-terraform-${{ inputs.environment }}" >> $GITHUB_ENV
 
       - name: Terraform Init
         run: |
