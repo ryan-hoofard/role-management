@@ -16,8 +16,7 @@ jobs:
     with:
       region: us-west-2
       environment: dev
-    secrets: 
-      aws_role: ${{ secrets.AWS_ROLE_DEV }}
+      role: arn:aws:iam::767397928267:role/role-management
 
 
   
