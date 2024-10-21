@@ -14,7 +14,7 @@ jobs:
       id-token: write
       contents: read
     with:
-      region: us-west-2
+      region: us-east-1
       environment: dev
       role: arn:aws:iam::767397928267:role/role-management
 
