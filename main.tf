@@ -14,8 +14,7 @@ resource "aws_iam_role" "this" {
                 "StringEquals": {
                     "token.actions.githubusercontent.com:aud": "sts.amazonaws.com",
                     "token.actions.githubusercontent.com:sub": [
-                        "repo:ryan-hoofard/github-aws-oidc-terraform:environment:${var.environment}:job_workflow_ref:ryan-hoofard/github-aws-oidc-terraform/.github/workflows/reusable-terraform-workflow.yml@refs/heads/dev",
-                        "repo:ryan-hoofard/new-terraform-repository:environment:${var.environment}"
+                        "repo:ryan-hoofard/github-aws-oidc-terraform:environment:${var.environment}:job_workflow_ref:ryan-hoofard/github-aws-oidc-terraform/.github/workflows/reusable-terraform-workflow.yml@refs/heads/dev"
                     ]
                 }
             }
